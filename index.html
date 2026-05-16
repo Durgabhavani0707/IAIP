@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Smart Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Blur Background -->
+
+  <div class="blur one"></div>
+  <div class="blur two"></div>
+
+  <!-- Calculator -->
+
+  <div class="calculator" id="calculator">
+
+    <!-- Top Bar -->
+
+    <div class="top-bar">
+
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+    </div>
+
+    <!-- Title -->
+
+    <h1>✨ AI Smart Calculator</h1>
+
+    <!-- History -->
+
+    <div id="history"></div>
+
+    <!-- Display -->
+
+    <div class="display-box">
+
+      <input type="text" id="display" readonly>
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+      <button class="special" onclick="clearDisplay()">C</button>
+
+      <button class="special" onclick="deleteLast()">DEL</button>
+
+      <button class="operator" onclick="appendValue('%')">%</button>
+
+      <button class="operator" onclick="appendValue('/')">÷</button>
+
+      <button class="number" onclick="appendValue('7')">7</button>
+
+      <button class="number" onclick="appendValue('8')">8</button>
+
+      <button class="number" onclick="appendValue('9')">9</button>
+
+      <button class="operator" onclick="appendValue('*')">×</button>
+
+      <button class="number" onclick="appendValue('4')">4</button>
+
+      <button class="number" onclick="appendValue('5')">5</button>
+
+      <button class="number" onclick="appendValue('6')">6</button>
+
+      <button class="operator" onclick="appendValue('-')">−</button>
+
+      <button class="number" onclick="appendValue('1')">1</button>
+
+      <button class="number" onclick="appendValue('2')">2</button>
+
+      <button class="number" onclick="appendValue('3')">3</button>
+
+      <button class="operator plus" onclick="appendValue('+')">+</button>
+
+      <button class="number zero" onclick="appendValue('0')">0</button>
+
+      <button class="number" onclick="appendValue('.')">.</button>
+
+      <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
